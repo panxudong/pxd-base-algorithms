@@ -29,6 +29,9 @@ public class LinkListBuilder {
     }
 
     public LinkListBuilder appendNodes(List<Integer> values) {
+        if (CollectionUtils.isEmpty(values)) {
+            return this;
+        }
         values.stream().forEach(value -> this.appendNode(value));
         return this;
     }
@@ -59,7 +62,7 @@ public class LinkListBuilder {
     }
 
     private <T> T build(List<LinkListNode> nodes, Function<List<LinkListNode>, T> linkListFunction) {
-        if (CollectionUtils.isEmpty(this.nodes)) {
+        if (CollectionUtils.isEmpty(nodes)) {
             return null;
         }
 

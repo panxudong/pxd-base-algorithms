@@ -21,4 +21,17 @@ public class LinkListNode {
 
     private LinkListNode after;
 
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("{").append("value=" + this.value);
+        if (this.before != null) {
+            sb.append(", before=" + this.before.getValue());
+        }
+        if (this.after != null) {
+            sb.append(", after=" + this.after.getValue());
+        }
+        sb.append("}");
+        return sb.toString();
+    }
 }
