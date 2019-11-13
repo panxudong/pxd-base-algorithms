@@ -1,4 +1,4 @@
-package com.pxd.base.commons.model;
+package com.pxd.base.commons.linklist;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

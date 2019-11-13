@@ -1,6 +1,5 @@
-package com.pxd.base.commons.builder;
+package com.pxd.base.commons.linklist;
 
-import com.pxd.base.commons.model.LinkListNode;
 import org.apache.commons.collections4.CollectionUtils;
 
 import java.util.ArrayList;
