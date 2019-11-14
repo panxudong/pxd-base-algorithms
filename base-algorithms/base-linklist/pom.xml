@@ -6,12 +6,12 @@
 
     <parent>
         <groupId>com.pxd</groupId>
-        <artifactId>pxd-base</artifactId>
+        <artifactId>base-algorithms</artifactId>
         <version>${revision}</version>
     </parent>
 
-    <artifactId>base-commons</artifactId>
-    <name>base-commons</name>
+    <artifactId>base-linklist</artifactId>
+    <name>base-linklist</name>
     <version>${revision}</version>
 
     <dependencies>

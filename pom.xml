@@ -13,7 +13,7 @@
     <groupId>com.pxd</groupId>
     <artifactId>pxd-base</artifactId>
     <name>pxd-base</name>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>${revision}</version>
     <packaging>pom</packaging>
 
     <properties>
@@ -22,7 +22,7 @@
 
     <modules>
         <module>base-commons</module>
-        <module>base-linklist</module>
+        <module>base-algorithms</module>
     </modules>
 
     <dependencies>
