@@ -9,7 +9,7 @@ import java.util.Arrays;
 
 /**
  * Created by panxudong on 2019/11/14.
- * Description:
+ * Description: 合并两个有序的单链表，合并之后的链表依然有序
  */
 @Builder
 public class MergeSortedLinkList {
@@ -24,7 +24,7 @@ public class MergeSortedLinkList {
     }
 
     /**
-     * 合并两个有序的单链表，合并之后的链表依然有序
+     * 时间复杂度：O(max(first_length, second_length))，空间复杂度：O(4)
      *
      * @param first
      * @param second

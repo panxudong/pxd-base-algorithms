@@ -9,7 +9,7 @@ import java.util.Arrays;
 
 /**
  * Created by panxudong on 2019/11/13.
- * Description:
+ * Description: 链表基本操作（创建，打印，计数）
  */
 public class BaseOperation {
 
