@@ -14,7 +14,7 @@ import java.util.Arrays;
 public class BaseOperation {
 
     public static void main(String[] args) {
-        LinkListNode node = LinkListBuilder.newInstance().appendNodes(Arrays.asList(2, 8, 5, 0, 7, 6, 1, 9, 4, 3)).buildForSingle();
+        LinkListNode node = LinkListBuilder.newInstance().appendNodes(Arrays.asList(2, 8, 5, 0, 7, 6, 1, 9, 4, 3)).build();
         LinkListPrinter.print(node);
         System.out.println("size:" + LinkListCounter.count(node));
     }

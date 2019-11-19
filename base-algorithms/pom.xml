@@ -17,6 +17,7 @@
 
     <modules>
         <module>base-linklist</module>
+        <module>base-tree</module>
     </modules>
 
     <dependencies>

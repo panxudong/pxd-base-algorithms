@@ -14,7 +14,7 @@ import java.util.Arrays;
 public class RingSubject {
 
     public static void main(String[] args) {
-        LinkListNode node = LinkListBuilder.newInstance().appendNodes(Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)).buildForSingle();
+        LinkListNode node = LinkListBuilder.newInstance().appendNodes(Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)).build();
 
         LinkListNode ring = null;
         for (LinkListNode temp = node; temp != null; temp = temp.getAfter()) {

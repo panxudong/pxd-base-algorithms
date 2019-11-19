@@ -17,8 +17,8 @@ import java.util.LinkedList;
 public class FindFirstIntersectingNode {
 
     public static void main(String[] args) {
-        LinkListNode first = LinkListBuilder.newInstance().appendNodes(Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)).buildForSingle();
-        LinkListNode second = LinkListBuilder.newInstance().appendNodes(Arrays.asList(11, 12, 13, 14)).buildForSingle();
+        LinkListNode first = LinkListBuilder.newInstance().appendNodes(Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)).build();
+        LinkListNode second = LinkListBuilder.newInstance().appendNodes(Arrays.asList(11, 12, 13, 14)).build();
 
         LinkListNode iFirst = first, iSecond = second;
         while (iFirst.getAfter() != null && iSecond.getAfter() != null) {

@@ -15,8 +15,8 @@ import java.util.Arrays;
 public class MergeSortedLinkList {
 
     public static void main(String[] args) {
-        LinkListNode first = LinkListBuilder.newInstance().appendNodes(Arrays.asList(1, 3, 5, 7, 9, 11)).buildForSingle();
-        LinkListNode second = LinkListBuilder.newInstance().appendNodes(Arrays.asList(-1, 0, 2, 4, 6, 8)).buildForSingle();
+        LinkListNode first = LinkListBuilder.newInstance().appendNodes(Arrays.asList(1, 3, 5, 7, 9, 11)).build();
+        LinkListNode second = LinkListBuilder.newInstance().appendNodes(Arrays.asList(-1, 0, 2, 4, 6, 8)).build();
 
         MergeSortedLinkList mergeSortedLinkList = MergeSortedLinkList.builder().build();
         LinkListNode result = mergeSortedLinkList.merge(first, second);

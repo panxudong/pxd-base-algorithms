@@ -17,7 +17,7 @@ import java.util.LinkedList;
 public class ReversePrint {
 
     public static void main(String[] args) {
-        LinkListNode node = LinkListBuilder.newInstance().appendNodes(Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)).buildForSingle();
+        LinkListNode node = LinkListBuilder.newInstance().appendNodes(Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)).build();
         LinkListPrinter.print(node);
 
         ReversePrint reversePrint = ReversePrint.builder().build();
