@@ -36,7 +36,7 @@ public class LinkListBuilder {
         return this;
     }
 
-    public LinkListNode buildForSingle() {
+    public LinkListNode build() {
         Function<List<LinkListNode>, LinkListNode> linkListFunction = list -> {
             for (int i = 0; i < list.size(); i++) {
                 if (i + 1 <= list.size() - 1) {
