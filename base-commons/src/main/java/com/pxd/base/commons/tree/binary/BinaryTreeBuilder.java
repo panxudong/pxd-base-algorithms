@@ -24,7 +24,7 @@ public class BinaryTreeBuilder {
     }
 
     public BinaryTreeBuilder appendNode(int value) {
-        return this.appendNode(value, true);
+        return this.appendNode(value, false);
     }
 
     public BinaryTreeBuilder appendNode(int value, boolean isNull) {
@@ -46,11 +46,11 @@ public class BinaryTreeBuilder {
         Function<List<BinaryTreeNode>, BinaryTreeNode> treeFunction = list -> {
             for (int i = 0; i < this.nodes.size(); i++) {
                 BinaryTreeNode node = this.nodes.get(i);
-                if (this.nodes.size() - 1 > 2 * i + 1) {
+                if (this.nodes.size() - 1 >= 2 * i + 1) {
                     BinaryTreeNode left = this.nodes.get(2 * i + 1);
                     node.setLeft(left);
                 }
-                if (this.nodes.size() - 1 > 2 * (i + 1)) {
+                if (this.nodes.size() - 1 >= 2 * (i + 1)) {
                     BinaryTreeNode right = this.nodes.get(2 * (i + 1));
                     node.setRight(right);
                 }
