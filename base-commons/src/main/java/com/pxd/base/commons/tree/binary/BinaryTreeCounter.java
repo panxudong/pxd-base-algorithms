@@ -19,12 +19,12 @@ public class BinaryTreeCounter {
         while (CollectionUtils.isNotEmpty(list)) {
             BinaryTreeNode temp = list.removeLast();
             if (temp.getLeft() != null) {
-                list.addFirst(temp.getLeft());
                 count++;
+                list.addFirst(temp.getLeft());
             }
             if (temp.getRight() != null) {
-                list.addFirst(temp.getRight());
                 count++;
+                list.addFirst(temp.getRight());
             }
         }
         return count;
