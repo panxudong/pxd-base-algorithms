@@ -12,17 +12,21 @@ import java.util.List;
 public class BinaryTreeCounter {
 
     public static final int count(BinaryTreeNode node) {
+        if (node == null || node.getNode() == null || node.getNode().isNull()) {
+            return 0;
+        }
+
         LinkedList<BinaryTreeNode> list = new LinkedList<>();
 
         int count = 1;
         list.addFirst(node);
         while (CollectionUtils.isNotEmpty(list)) {
             BinaryTreeNode temp = list.removeLast();
-            if (temp.getLeft() != null) {
+            if (temp.getLeft() != null && temp.getLeft().getNode() != null && !temp.getLeft().getNode().isNull()) {
                 count++;
                 list.addFirst(temp.getLeft());
             }
-            if (temp.getRight() != null) {
+            if (temp.getRight() != null && temp.getRight().getNode() != null && !temp.getRight().getNode().isNull()) {
                 count++;
                 list.addFirst(temp.getRight());
             }

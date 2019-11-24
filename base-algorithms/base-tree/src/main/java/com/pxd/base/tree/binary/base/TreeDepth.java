@@ -43,11 +43,11 @@ public class TreeDepth {
             BinaryTreeNode temp = queue.removeLast();
             currentNodeSize--;
 
-            if (temp.getLeft() != null) {
+            if (temp.getLeft() != null && temp.getLeft().getNode() != null && !temp.getLeft().getNode().isNull()) {
                 queue.addFirst(temp.getLeft());
                 nextNodeSize++;
             }
-            if (temp.getRight() != null) {
+            if (temp.getRight() != null&& temp.getRight().getNode() != null && !temp.getRight().getNode().isNull()) {
                 queue.addFirst(temp.getRight());
                 nextNodeSize++;
             }
