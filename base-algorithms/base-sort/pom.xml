@@ -6,27 +6,15 @@
 
     <parent>
         <groupId>com.pxd</groupId>
-        <artifactId>pxd-base</artifactId>
+        <artifactId>base-algorithms</artifactId>
         <version>${revision}</version>
     </parent>
 
-    <artifactId>base-algorithms</artifactId>
-    <name>base-algorithms</name>
+    <artifactId>base-sort</artifactId>
+    <name>base-sort</name>
     <version>${revision}</version>
-    <packaging>pom</packaging>
-
-    <modules>
-        <module>base-linklist</module>
-        <module>base-tree</module>
-        <module>base-sort</module>
-    </modules>
 
     <dependencies>
-        <dependency>
-            <groupId>com.pxd</groupId>
-            <artifactId>base-commons</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-        </dependency>
     </dependencies>
 
     <build>

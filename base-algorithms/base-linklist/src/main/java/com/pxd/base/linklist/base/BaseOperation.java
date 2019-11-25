@@ -10,6 +10,7 @@ import java.util.Arrays;
 /**
  * Created by panxudong on 2019/11/13.
  * Description: 链表基本操作（创建，打印，计数）
+ * Reference: https://www.cnblogs.com/smyhvae/p/4782595.html
  */
 public class BaseOperation {
 

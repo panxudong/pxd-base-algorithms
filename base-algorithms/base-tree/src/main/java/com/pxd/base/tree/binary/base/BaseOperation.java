@@ -15,6 +15,7 @@ import java.util.Arrays;
  * <p>      2         3
  * <p>  4      5   6     7
  * <p>8  9  10
+ * Reference: http://blog.csdn.net/zhongwen7710/article/details/39300339
  */
 public class BaseOperation {
 
