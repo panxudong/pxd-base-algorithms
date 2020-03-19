@@ -10,9 +10,9 @@
         <version>1.0.0-SNAPSHOT</version>
     </parent>
 
-    <groupId>com.pxd</groupId>
-    <artifactId>pxd-base</artifactId>
-    <name>pxd-base</name>
+    <groupId>com.pxd.base.algorithms</groupId>
+    <artifactId>pxd-base-algorithms</artifactId>
+    <name>pxd-base-algorithms</name>
     <version>${revision}</version>
     <packaging>pom</packaging>
 
@@ -21,8 +21,11 @@
     </properties>
 
     <modules>
-        <module>base-commons</module>
-        <module>base-algorithms</module>
+        <module>algorithms-parent</module>
+        <module>algorithms-commons</module>
+        <module>algorithms-linklist</module>
+        <module>algorithms-tree</module>
+        <module>algorithms-sort</module>
     </modules>
 
     <dependencies>

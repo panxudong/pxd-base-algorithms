@@ -6,12 +6,23 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="algorithms-commons" />
+        <module name="algorithms-linklist" />
+        <module name="algorithms-sort" />
+        <module name="algorithms-tree" />
         <module name="Commons" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Algorithms" target="1.5" />
+      <module name="algorithms-commons" target="1.8" />
+      <module name="algorithms-linklist" target="1.8" />
+      <module name="algorithms-parent" target="1.8" />
+      <module name="algorithms-sort" target="1.8" />
+      <module name="algorithms-tree" target="1.8" />
+      <module name="base-algorithms" target="1.8" />
       <module name="Commons" target="1.8" />
+      <module name="pxd-base-algorithms" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
